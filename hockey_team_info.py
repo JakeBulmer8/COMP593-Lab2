@@ -50,7 +50,8 @@ def print_cheer(team):
         team (dict): Team information data structure
     """
     # TODO: Print a cheer for the team that contains the team name and city 
-    print()
+    sentence = f"The {team['city']} {team['name']} wins every time"
+    print(sentence, end='\n\n')
 
 def print_roster(team):
     """Prints a dash list of all player names
@@ -59,7 +60,13 @@ def print_roster(team):
         team (dict): Team information data structure
     """
     # TODO: Print a heading
+    heading = f"{team['city']} {team['name']} Team Roster"
+    print(heading)
+    print('-' * len(heading))
+
     # TODO: Print a dash list of all player names
+    for p in team['players']:
+        print(f"- (p)")  # not complete
     print()
 
 def add_players_to_team(team, new_players):
