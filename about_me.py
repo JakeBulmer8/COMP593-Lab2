@@ -42,7 +42,7 @@ def main():
 
     # Step 5: Add pizza toppings to the data structure
     # TODO: Change to pizza toppings you like
-    add_pizza_toppings(about_me, ['soylent green', 'racht'])
+    add_pizza_toppings(about_me, ['mushrooms', 'sausage'])
     print_pizza_toppings(about_me)
 
     # Step 6: Add another movie to the data structure
@@ -63,8 +63,16 @@ def print_student_name_and_id(my_info):
     """
     # TODO: Complete function body per Step 3
     # Print sentence containing name
+    name_sentence= f"My name is {my_info['full_name']}, but you can call me Sir {my_info['full_name'].split(" ")[0]}!"
+    
     # Print sentence containing student ID
-    print()
+    id_sentence= f"My student ID is {my_info['student_id']}."
+
+    print(name_sentence, end='\n')
+    print(id_sentence, end='\n\n')
+
+def new_func(my_info):
+    return my_info('full_name')
 
 def print_pizza_toppings(my_info):
     """Prints a bullet list of favourite pizza toppings
