@@ -82,8 +82,11 @@ def print_pizza_toppings(my_info):
     """
     # TODO: Complete function body per Step 4
     # Print header "My favourite pizza toppings are:"
+    print ('My favourite pizza toppings are:', end="\n")
+    
     # Print bullet list of favourite pizza toppings
-    print()
+    for topping in my_info['pizza_toppings']:
+        print('-', topping, end="\n")
 
 def add_pizza_toppings(my_info, toppings):
     """Adds some pizza toppings to the list of favourites
