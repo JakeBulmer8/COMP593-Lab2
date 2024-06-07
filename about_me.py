@@ -63,8 +63,8 @@ def print_student_name_and_id(my_info):
     """
     # TODO: Complete function body per Step 3
     # Print sentence containing name
-    name_sentence= f"My name is {my_info['full_name']}, but you can call me Sir {my_info['full_name'].split(" ")[0]}!"
-    
+    name_sentence= f"My name is {my_info['full_name']}, but you can call me Sir {my_info['full_name'].split(" ")[0]}!" # .split reg_brackets determine the seperator in the string.
+                                                                                                                       # .split square brackets pick the word in the string to use "arg 0 in this case".
     # Print sentence containing student ID
     id_sentence= f"My student ID is {my_info['student_id']}."
 
